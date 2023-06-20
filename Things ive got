@@ -1,0 +1,117 @@
+# winning_number = 5
+# i = 0
+# win = False
+# while i<3:
+#     guess = int(input('Guess: '))
+#     if guess == winning_number:
+#         print('Jackpot!!!')
+#         win = True
+#         break
+#     else:
+#         i += 1
+# if not win:
+#     print('Try again')
+# CAR Game
+# playing = True
+# while playing:
+#     text = input('> ').upper()
+#     if text == 'HELP':
+#         print('''start - to start the car
+# stop - to stop the car
+# end - to end the game''')
+#     elif text == 'START':
+#         print('Car is starting')
+#     elif text == 'STOP':
+#         print('Car is stopping')
+#     elif text == 'END':
+#         print('You have ended the game')
+#         playing = False
+#     else:
+#         print('Wrong statement')
+
+# Shopping cart
+# phone = input('Phone: ')
+#
+# digit_mapping = {
+#     '1': 'one',
+#     '2': 'two',
+#     '3': 'three',
+#     '4': 'four'
+# }
+# output = ""
+# for ch in phone:
+#     output += digit_mapping.get(ch,"!") + " "
+# print(output)
+
+# msg = input(">")
+# words = msg.split(' ')
+# emoji = {
+#     ";)": "😉",
+#     ":)": "😊"
+# }
+# output = ""
+# for word in words:
+#     output += emoji.get(word,word) + " "
+# print(output)
+#
+# def emoji_converter(msg):
+#     words = msg.split(" ")
+#     emoji = {
+#         ";)": "😉",
+#         ":)": "😊"
+#     }
+#     output = ""
+#     for word in words:
+#         output += emoji.get(word,word) + " "
+#     return output
+#
+# msg = input(">")
+# print(emoji_converter(msg))
+
+# def leap_year(year):
+#     leap = False
+#     if year % 400 == 0 and year % 100 == 0:
+#         leap = True
+#     elif year % 4 == 0 and year % 100 != 0:
+#         leap = True
+#     return leap
+#
+#
+# print(leap_year(year=2400))
+# n = int(input())
+# number_sum = 0
+# for i in range(1,n+1):
+#     print(i,end='')
+# def score_words(no_of_words, msg):
+#     score = 0
+#     words = msg.split()
+#     letters = ['a', 'e', 'i', 'o', 'u', 'y']
+#     for word in words:
+#         count_letters = 0
+#         for ch in word:
+#             for i in letters:
+#                 if ch == i:
+#                     count_letters += 1
+#         if count_letters % 2 == 0:
+#             score += 2
+#         else:
+#             score += 1
+#     return score
+#
+#
+# no_of_words = int(input())
+# msg = input()
+# print(score_words(no_of_words, msg))
+
+# number = int(input())
+# if number % 2 != 0:
+#     print('Weird')
+# elif number in range(2,5):
+#     print('Not Weird')
+# elif number in range(6,20):
+#     print('Weird')
+# elif number > 20:
+#     print('Not Weird')
+
+string = input()
+letters = string.split()
